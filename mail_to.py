@@ -33,7 +33,7 @@ def mailto(img):
     Reciever_Email = "0201csai107@niet.co.in"
     # Reciever_Email = "0201csai107@niet.co.in"
     # Password = input('Enter your email account password: ')
-    Password = 'india@2233'
+    Password = input()
     newMessage = EmailMessage()                         
     newMessage['Subject'] = "violence detected" 
     newMessage['From'] = Sender_Email                   
@@ -57,7 +57,7 @@ def mailto(img):
     smtp.starttls()
     smtp.ehlo()
     # smtp.login('0201csml114@niet.co.in',passwrd)
-    smtp.login('0201csml114@niet.co.in','india@2233')
+    smtp.login('0201csml114@niet.co.in',Password)
     smtp.send_message(newMessage)
     # smtp.sendmail('0201csml114@niet.co.in',erp,newMessage)
     print(f'{erp} : mail_sent')
