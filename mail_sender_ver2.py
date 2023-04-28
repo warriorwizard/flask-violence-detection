@@ -5,8 +5,8 @@ smtp=smtplib.SMTP_SSL('smtp.gmail.com',2525)
 smtp.ehlo()
 #smtp.starttls()
 smtp.ehlo()
-
-smtp.login('Iamteamblue@proton.me','Iamcool@1')
+password=input('enter password')
+smtp.login('Iamteamblue@proton.me',password)
 #smtp.login('helpdeskadhi@gmail.com','pnfnvboatmczopkn')
 subject = "hello"
 body = "Nice to meet you!"
